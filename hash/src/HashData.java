@@ -46,7 +46,7 @@ public class HashData
         AlexClanton.add("CacaPooPoo");
         
         //creates a scanner object for input from user
-        Scanner input= new Scanner(System.in);
+        Scanner answer= new Scanner(System.in);
         
         //Input some user info into the map
         UserInfo.put("Fox Davenport", FoxDavenport);
@@ -66,7 +66,7 @@ public class HashData
         while (exit==0){
         System.out.println("Which one do you want to get info on?");
         System.out.println("Please input the number of the user. Ex: Fox is 1, Mithil 2, etc...");
-        int user= input.nextInt();
+        int user= answer.nextInt();
         
         if (user==0) {
             exit=1;
