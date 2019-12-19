@@ -23,7 +23,7 @@ public class HashData
         List<String> FoxDavenport= new ArrayList<String>();
         FoxDavenport.add("UltimateLifeForm@gmail.com");
         FoxDavenport.add("Pineapple Pizza");
-        FoxDavenport.add("Hates Eclipse");
+        FoxDavenport.add("Hates Eclipse!");
         
         //create a list to store values for Daniel Yang
         List<String> DanielYang= new ArrayList<String>();
