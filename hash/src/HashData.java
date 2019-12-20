@@ -87,14 +87,14 @@ public class HashData
     	List<String> MithilInfo= UserInfo.get("Mithil Pujar");
         System.out.println("Mithil's info: ");
         System.out.println(CT.get(0) + MithilInfo.get(0));
-        System.out.println(CT.get(1)+ MithilInfo.get(1));
+        System.out.println(CT.get(1)+ MithilInfo.get(1) + "\n");
        } 
 
        if(user==3) {
     	    List<String> DanielInfo= UserInfo.get("Daniel Yang");
             System.out.println("Daniel's info: ");
             System.out.println(CT.get(0) + DanielInfo.get(0));
-            System.out.println(CT.get(1)+ DanielInfo.get(1));
+            System.out.println(CT.get(1)+ DanielInfo.get(1)+ "\n");
             
        }
     
@@ -102,14 +102,14 @@ public class HashData
     	   List<String> JohnInfo= UserInfo.get("Mr. John");
         System.out.println("Mr John's info: ");
         System.out.println(CT.get(0)+JohnInfo.get(0));
-        System.out.println(CT.get(1)+JohnInfo.get(1));
+        System.out.println(CT.get(1)+JohnInfo.get(1)+ "\n");
        } 
     
        if(user==5) {
     	   List<String> AlexInfo=UserInfo.get("Alex Clanton");
         System.out.println("Alex's info: ");
         System.out.println(CT.get(0)+AlexInfo.get(0));
-        System.out.println(CT.get(1)+AlexInfo.get(1));
+        System.out.println(CT.get(1)+AlexInfo.get(1)+ "\n");
     } 
 }
 }
