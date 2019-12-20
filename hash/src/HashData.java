@@ -23,7 +23,6 @@ public class HashData
         List<String> FoxDavenport= new ArrayList<String>();
         FoxDavenport.add("UltimateLifeForm@gmail.com");
         FoxDavenport.add("Pineapple Pizza");
-        FoxDavenport.add("Hates Eclipse!");
         
         //create a list to store values for Daniel Yang
         List<String> DanielYang= new ArrayList<String>();
@@ -45,8 +44,13 @@ public class HashData
         AlexClanton.add("BadCoder@terrible.com");
         AlexClanton.add("CacaPooPoo");
         
+        //create a list to store values for order 
+        List<String> CT = new ArrayList<String>();
+        CT.add("Email: ");
+        CT.add("Password: ");
+        
         //creates a scanner object for input from user
-        Scanner answer= new Scanner(System.in);
+        Scanner input= new Scanner(System.in);
         
         //Input some user info into the map
         UserInfo.put("Fox Davenport", FoxDavenport);
@@ -63,43 +67,44 @@ public class HashData
         System.out.println("Users: " + Username);
         
         //loops till user wants to exit
-        while (exit==0){
+       while (exit==0){
         System.out.println("Which one do you want to get info on?");
         System.out.println("Please input the number of the user. Ex: Fox is 1, Mithil 2, etc...");
-        int user= answer.nextInt();
+        int user= input.nextInt();
         
-        if (user==0) {
+       if (user==0) {
             exit=1;
-    }
+        }
         
         if(user==1) {
+            List<String> FoxInfo= UserInfo.get("Fox Davenport");
             System.out.println("Fox's info: ");
-            System.out.println(UserInfo.get("Fox Davenport") + "\n"); 
-    } 
+            System.out.println(CT.get(0)+ FoxInfo.get(0)); 
+            System.out.println(CT.get(1)+ FoxInfo.get(1) + "\n");
+       } 
     
-    if(user==2) {
+       if(user==2) {
         System.out.println("Mithil's info: ");
         System.out.println(UserInfo.get("Mithil Pujar") + "\n");
-    } 
+       } 
 
-        if(user==3) {
+       if(user==3) {
             System.out.println("Daniel's info: ");
             System.out.println(UserInfo.get("Daniel Yang") + "\n");
             
-    }
+       }
     
-    if(user==4) {
+       if(user==4) {
         System.out.println("Mr John's info: ");
         System.out.println(UserInfo.get("Mr. John") + "\n");
-    } 
+       } 
     
-    if(user==5) {
+       if(user==5) {
         System.out.println("Alex's info: ");
         System.out.println(UserInfo.get("Alex Clanton") + "\n");
     } 
 }
 }
 }
-
 
 
