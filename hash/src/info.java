@@ -1,5 +1,6 @@
-import java.util.HashMap; 
-  
+import java.util.HashMap;
+import java.util.logging.Logger; 
+
 class Key { 
     String key; 
     Key(String key) 
@@ -28,13 +29,14 @@ public class info
 { 
     public static void main(String[] args) 
     { 
-       
+    	Logger hashLogger = Logger.getLogger("Hash");
+    	
         HashMap map = new HashMap(); 
         map.put(new Key("Alex"), 1); 
         map.put(new Key("Fox"), 2); 
         map.put(new Key("Mithil"), 3); 
-  
-        System.out.println("Value for key Alex: " +map.get(new Key("Alex"))); 
+        
+        //System.out.println("Value for key Alex: " +map.get(new Key("Alex"))); 
         
         System.out.println("Value for key Fox: " + map.get(new Key("Fox"))); 
         
