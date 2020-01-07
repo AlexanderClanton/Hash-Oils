@@ -13,7 +13,7 @@ public class LoggingExample {
     
     public static void main(String[] args) 
     {
-        
+        //alex c
         
         logger.setLevel(Level.FINE);
         logger.addHandler(new ConsoleHandler());
