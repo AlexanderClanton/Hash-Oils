@@ -1,17 +1,27 @@
 import java.util.*; 
+import java.util.logging.ConsoleHandler;
+
+
+import java.util.logging.Level;
+
+import java.util.logging.Logger;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 //Example of data retrieval with Hashing!
+import java.util.logging.Level;
 
 public class HashData
 {
     public static void main(String args[]) 
     { 
-        //clears the screen
+    	Logger logger = Logger.getLogger(LoggingExample.class.getName());
+    	logger.log(Level.INFO, "Drone");
+    	//clears the screen
+    	
         System.out.print('\u000C');
-        
+        //logger.log(Level.SEVERE, "IRAN");
         //set integer exit equal to 0
         int exit=0;
         
