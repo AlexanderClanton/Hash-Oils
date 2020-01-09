@@ -1,10 +1,10 @@
-import java.io.FileInputStream;
-import java.io.IOException;
+
+
 import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
+
+
 import java.util.logging.Level;
-import java.util.logging.LogManager;
+
 import java.util.logging.Logger;
 
 public class LoggingExample {
@@ -16,13 +16,20 @@ public class LoggingExample {
         //alex c
         
         logger.setLevel(Level.FINE);
-        logger.addHandler(new ConsoleHandler());
-        for(int i=0; i<10; i++){
+        //logger.addHandler(new ConsoleHandler());
+        //for(int i=0; i<10; i++){
             //logging messages
-            logger.log(Level.INFO, "Msg"+i);
-        }
         
-       
+
+        
+        	logger.log(Level.INFO, "Drone");
+        
+            logger.log(Level.WARNING, "Incoming Missle");
+            logger.log(Level.SEVERE, "IRAN");
+        
+     }
+        
+        
     }
 
-}
+
