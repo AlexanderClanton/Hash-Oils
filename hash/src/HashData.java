@@ -91,7 +91,10 @@ public class HashData
         
         	//loops till user wants to exit
        while (exit==0){
-    	while (add==0) {
+    	   
+    	   //adding part doesn't work yet. need to fix
+      
+    	   /* while (add==0) {
     		System.out.println("Press + to add a user or - to not");
     		char user = input.next().charAt(0);
     			if(user=='+') {
@@ -117,10 +120,14 @@ public class HashData
     		           System.out.println(name + "'s info: ");
     		           System.out.println(CT.get(0)+NewUserInfo.get(0));
     		           System.out.println(CT.get(1)+NewUserInfo.get(1)+ "\n");
+    		           
     		       }
+    			
+    			*/
+    	   
         System.out.println("Which one do you want to get info on?");
         System.out.println("Please input the number of the user. Ex: Fox is 1, Mithil 2, etc...");
-        user = input.next().charAt(0);
+        char user = input.next().charAt(0);
         
        if (user=='0') {
             exit=1;
@@ -172,6 +179,6 @@ public class HashData
 }
 }
 }
-}
+
 
 
