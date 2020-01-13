@@ -1,7 +1,9 @@
 
+
+
 public class JUnitTest {
 	public int test(int x) {
-		x = x + 1;
-		return x;
+		int y = x + 1;
+		return y;
 	}
 }

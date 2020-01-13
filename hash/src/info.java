@@ -1,4 +1,8 @@
+
 import java.util.HashMap;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
 import java.util.logging.Logger; 
 
 class Key { 
@@ -27,11 +31,25 @@ class Key {
 
 public class info 
 { 
-    public static void main(String[] args) 
+	static Logger logger = Logger.getLogger(LoggingExample.class.getName());
+	Handler ch = new ConsoleHandler();
+	
+	
+	
+	public static void main(String[] args) 
     { 
-    	Logger hashLogger = Logger.getLogger("Hash");
-    	
-        HashMap map = new HashMap(); 
+		//logger.log(Level.INFO, "Drone");
+		//Handler ch = new ConsoleHandler();
+		
+		//Logger.getLogger("").addHandler(ch);
+		
+		logger.setLevel(Level.FINEST);
+		logger.log(Level.INFO, "Drone");
+		logger.log(Level.SEVERE, "IRAN");
+		Logger hashLogger = Logger.getLogger("Hash");
+		
+        
+		HashMap map = new HashMap(); 
         map.put(new Key("Alex"), 1); 
         map.put(new Key("Fox"), 2); 
         map.put(new Key("Mithil"), 3); 
