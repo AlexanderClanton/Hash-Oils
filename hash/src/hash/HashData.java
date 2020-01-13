@@ -1,3 +1,4 @@
+package hash;
 
 import java.util.*; 
 import java.util.logging.ConsoleHandler;
