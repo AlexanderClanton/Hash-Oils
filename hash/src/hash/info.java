@@ -8,6 +8,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger; 
 
 import org.apache.log4j.*;
+
+/**
+ * Log4j logger
+ */
 class Key { 
     String key; 
     Key(String key) 
