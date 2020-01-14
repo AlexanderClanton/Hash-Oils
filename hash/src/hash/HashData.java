@@ -1,18 +1,12 @@
 package hash;
 
-import java.util.*; 
-import java.util.logging.ConsoleHandler;
-
-
-import java.util.logging.Level;
-
-import java.util.logging.Logger;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
-//Example of data retrieval with Hashing!
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class HashData
 {

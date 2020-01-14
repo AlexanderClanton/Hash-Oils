@@ -1,12 +1,13 @@
+
 package hash;
 
 import java.util.HashMap;
-
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger; 
 
+import org.apache.log4j.*;
 class Key { 
     String key; 
     Key(String key) 
