@@ -1,14 +1,25 @@
-package hash;
-
+/*
 import java.util.HashMap;
-
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger; 
 
-class Key { 
-    String key; 
+import java.util.logging.*;
+//import java.util.logging;
+
+//import java.util.logging.*;
+
+
+
+class Key 
+
+{ 
+	
+	
+	
+	
+	String key; 
     Key(String key) 
     { 
         this.key = key; 
@@ -33,7 +44,7 @@ class Key {
 
 public class info 
 { 
-	static Logger logger = Logger.getLogger(LoggingExample.class.getName());
+	//static Logger logger = Logger.getLogger(LoggingExample.class.getName());
 	Handler ch = new ConsoleHandler();
 	
 	
@@ -45,9 +56,9 @@ public class info
 		
 		//Logger.getLogger("").addHandler(ch);
 		
-		logger.setLevel(Level.FINEST);
-		logger.log(Level.INFO, "Drone");
-		logger.log(Level.SEVERE, "IRAN");
+		//logger.setLevel(Level.FINEST);
+		//logger.log(Level.INFO, "Drone");
+		//logger.log(Level.SEVERE, "IRAN");
 		Logger hashLogger = Logger.getLogger("Hash");
 		
         
@@ -69,3 +80,4 @@ public class info
     
     } 
 } 
+*/
