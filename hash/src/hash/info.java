@@ -1,11 +1,13 @@
 
 package hash;
+import org.apache.log4j.*;
+import org.apache.log4j.Logger;
 
 import java.util.HashMap;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
-import java.util.logging.Logger; 
+
 
 import org.apache.log4j.*;
 
@@ -38,8 +40,8 @@ class Key {
 
 public class info 
 { 
-	static Logger logger = Logger.getLogger(LoggingExample.class.getName());
-	Handler ch = new ConsoleHandler();
+	 static Logger log4j = Logger.getLogger(info.class);
+	
 	
 	
 	
@@ -49,11 +51,9 @@ public class info
 		//Handler ch = new ConsoleHandler();
 		
 		//Logger.getLogger("").addHandler(ch);
-		
-		logger.setLevel(Level.FINEST);
-		logger.log(Level.INFO, "Drone");
-		logger.log(Level.SEVERE, "IRAN");
-		Logger hashLogger = Logger.getLogger("Hash");
+		log4j.debug("small issue");
+		log4j.error("big issue");
+		log4j.fatal("something happened");
 		
         
 		HashMap map = new HashMap(); 
