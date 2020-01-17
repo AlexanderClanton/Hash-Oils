@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 import java.util.logging.Level;
+//comment
 
 //Example of data retrieval with Hashing!
 public class HashData {
