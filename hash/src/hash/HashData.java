@@ -1,3 +1,4 @@
+package hash;
 
 import java.util.*; 
 import java.util.logging.ConsoleHandler;
@@ -10,10 +11,11 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-//Example of data retrieval with Hashing!
+
 import java.util.logging.Level;
 
-public class HashData
+//Example of data retrieval with Hashing!
+public class HashData extends CreateUser
 {
     public static void main(String args[]) 
     { 
@@ -23,12 +25,10 @@ public class HashData
     	
     	//clears the screen
         System.out.print('\u000C');
-        //logger.log(Level.SEVERE, "IRAN");
+        
         //set integer exit equal to 0
         int exit=0;
         
-        int add=0;
-        //
         // Create a HashTable to store data about users
         // String values corresponding to string of arraylist
         LinkedHashMap<String, List<String>> UserInfo= new LinkedHashMap<>(); 
@@ -58,14 +58,6 @@ public class HashData
         AlexClanton.add("BadCoder@terrible.com");
         AlexClanton.add("CacaPooPoo");
         
-        //create a list to store values for a New User
-        List<String> NewUser= new ArrayList<String>();
-        String name = null;
-        String email = null;
-        String password = null;
-        NewUser.add(email);
-        NewUser.add(password);
-        
         //create a list to store values for order 
         List<String> CT = new ArrayList<String>();
         CT.add("Email: ");
@@ -74,64 +66,45 @@ public class HashData
         //creates a scanner object for input from user
         Scanner input= new Scanner(System.in);
         
+        CreateUser CU= new CreateUser();
+        
         //Input some user info into the map
         UserInfo.put("Fox Davenport", FoxDavenport);
         UserInfo.put("Mithil Pujar", MithilPujar);
         UserInfo.put("Daniel Yang", DanielYang);
         UserInfo.put("Mr. John", MrJohn);
         UserInfo.put("Alex Clanton", AlexClanton);
-        UserInfo.put(name, NewUser);
+        
         
         System.out.println("Hi! Welcome to our mini databse! Please input a user you would like to learn about");
-        System.out.println("If you would like to add a user, please press +");
         System.out.println("Press 0 when you want to exit");
+        
+        System.out.println("Would you like to add an user? If so press y. If not press n");
+        
+        char bruh = input.next().charAt(0);
+        
+        if (bruh=='y') {
+            List<String> NewUserInfo= run();
+        }
+        
+        if (bruh=='n') {
+            System.out.println("You may not add users now");
+        }
         
         // HashMap's key set
         Set<String> Username = UserInfo.keySet();
         System.out.println("Users: " + Username);
         
-        	//loops till user wants to exit
-       while (exit==0){
-    	   
-    	   //adding part doesn't work yet. need to fix
-      
-    	   /* while (add==0) {
-    		System.out.println("Press + to add a user or - to not");
-    		char user = input.next().charAt(0);
-    			if(user=='+') {
-    				
-    		    	   System.out.println("What is the user's name?");
-    		    	   name= input.nextLine();
-    		    	   
-    		    	   System.out.println("What is the user's email?");
-    		    	   email= input.nextLine();
-    		    	   
-    		    	   System.out.println("What is the user's password?");
-    		    	   password= input.nextLine();
-    		    	   
-    		    	   List<String> Newuser= UserInfo.get(name);
-    		           NewUser.add(email);
-    		           NewUser.add(password);
-    		    	   
-    		           UserInfo.put(name, NewUser);
-    		           
-    		           System.out.println("Thank you! The user has been added");
-    		           
-    		           List<String> NewUserInfo=UserInfo.get(name);
-    		           System.out.println(name + "'s info: ");
-    		           System.out.println(CT.get(0)+NewUserInfo.get(0));
-    		           System.out.println(CT.get(1)+NewUserInfo.get(1)+ "\n");
-    		           
-    		       }
-    			
-    			*/
-    	   
+       //loops till user wants to exit
+       while (exit==0){      	
         System.out.println("Which one do you want to get info on?");
         System.out.println("Please input the number of the user. Ex: Fox is 1, Mithil 2, etc...");
         char user = input.next().charAt(0);
         
        if (user=='0') {
             exit=1;
+            String done= "done";
+            System.out.println(done);
         }
         
         if(user=='1') {
@@ -169,17 +142,11 @@ public class HashData
         System.out.println(CT.get(0)+AlexInfo.get(0));
         System.out.println(CT.get(1)+AlexInfo.get(1)+ "\n");
     } 
-       
-       if(user=='6') {
-    	   List<String> NewUserInfo=UserInfo.get(name);
-    	   System.out.println(name);
-           System.out.println(CT.get(0)+NewUserInfo.get(0));
-           System.out.println(CT.get(1)+NewUserInfo.get(1)+ "\n");
-       }
-       
+    
+    if(user=='6'){
+        List<String> NewUserInfo= run();
+        System.out.println(NewUserInfo);
 }
 }
 }
-
-
-
+}
