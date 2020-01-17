@@ -15,8 +15,7 @@ import java.util.Set;
 import java.util.logging.Level;
 
 //Example of data retrieval with Hashing!
-public class HashData extends CreateUser
-{
+public class HashData {
     public static void main(String args[]) 
     { 
     	//basic logger telling level
@@ -66,7 +65,6 @@ public class HashData extends CreateUser
         //creates a scanner object for input from user
         Scanner input= new Scanner(System.in);
         
-        CreateUser CU= new CreateUser();
         
         //Input some user info into the map
         UserInfo.put("Fox Davenport", FoxDavenport);
@@ -78,18 +76,6 @@ public class HashData extends CreateUser
         
         System.out.println("Hi! Welcome to our mini databse! Please input a user you would like to learn about");
         System.out.println("Press 0 when you want to exit");
-        
-        System.out.println("Would you like to add an user? If so press y. If not press n");
-        
-        char bruh = input.next().charAt(0);
-        
-        if (bruh=='y') {
-            List<String> NewUserInfo= run();
-        }
-        
-        if (bruh=='n') {
-            System.out.println("You may not add users now");
-        }
         
         // HashMap's key set
         Set<String> Username = UserInfo.keySet();
@@ -143,10 +129,7 @@ public class HashData extends CreateUser
         System.out.println(CT.get(1)+AlexInfo.get(1)+ "\n");
     } 
     
-    if(user=='6'){
-        List<String> NewUserInfo= run();
-        System.out.println(NewUserInfo);
 }
 }
 }
-}
+
