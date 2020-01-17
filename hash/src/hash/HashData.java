@@ -22,7 +22,7 @@ public class HashData {
     	//basic logger telling level
     	Logger logger = Logger.getLogger(LoggingExample.class.getName());
     	logger.log(Level.INFO, "Drone");
-    	
+    	//ds
     	//clears the screen
         System.out.print('\u000C');
         
